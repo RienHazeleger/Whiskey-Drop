@@ -2,8 +2,29 @@ body {
   font-display: "Roboto", sans-serif;
   }
 
-.alert-container {
+.container-wrapper {
+
+}
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
     }
+
+.site-wide-alert {
+        border-radius: 0;
+        z-index: 2;
+        margin-bottom: 0;
+        padding: 5px 15px;
+        background-color: #eec802;
+        border-color: #eec802;
+}
 
 .callout-container {
     height: 100vh;
@@ -37,6 +58,21 @@ body {
 
 }
 
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom; 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .header {
+    margin-bottom: 25px;
+}
 
 
 /* block dividers */
@@ -45,6 +81,7 @@ body {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--orange {
@@ -55,9 +92,21 @@ body {
     background-color: green;
 }
 
+.block-divider--white {
+    background-color: white;
+}
+
 .block-divider--short {
     width: 35px;
 }
+
+/* content containers */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 
 /* navbar */
 
@@ -73,7 +122,7 @@ body {
     margin: 0;
     border: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.25)
+    background-color: rgba(0,0,0,0.25);
     z-index: 1;
 }
 
@@ -88,6 +137,8 @@ body {
 .navbar .navbar-nav a {
     font-weight: bold;
 }
+
+
 
 /* jumbotron */
 .jumbotron {
@@ -133,4 +184,25 @@ body {
     background-color: #df4929;
     border-color: #df4929;
     color: white;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    font-size: 45px;
+    margin-bottom: 20px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    borde-radius: 15px;
+    min-width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
 }
